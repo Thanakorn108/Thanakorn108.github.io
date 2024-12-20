@@ -3,24 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanakorn108's Website</title>
+  <title>Wep form</title>
+ 
 </head>
 <body>
-  <a href="index.html">Home</a>  |
-  <a href="about.html">about</a>  |
-  <a href="contact.html">contact</a>  |
-  <h1>Home Page</h1>
-  <h2>Home Page</h2>
-  <h3>Home Page</h3>
-  <h4>Home Page</h4>
-  <h5>Home Page</h5>
-  <h6>Home Page</h6>
-  <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo exercitationem consequatur alias fuga ad blanditiis repellendus sed, soluta dolorum minus obcaecati nulla facere iure placeat quas impedit temporibus mollitia.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas, maiores, suscipit dignissimos quaerat ipsa quisquam iusto voluptas officiis molestiae mollitia excepturi sapiente sunt eos alias repellendus hic, qui inventore.
-  Quis cum rem magnam voluptates! Fugit, optio? Odio pariatur porro, cupiditate provident esse maxime, atque veritatis, voluptatibus rem deleniti quos quaerat magni nemo veniam repellendus voluptatum similique doloribus voluptas. Aliquid.
-  Quidem aut porro error minus atque! Culpa blanditiis unde quaerat quos sint voluptate. Quas omnis qui quo esse eum minima soluta corporis. Quo in laborum sed repudiandae eaque, laboriosam optio.
-  Blanditiis iure aliquid fuga, harum necessitatibus sed praesentium quos illo, quis sapiente sequi, quaerat eaque tenetur deserunt veritatis modi perferendis! Ducimus repudiandae quisquam in animi eveniet numquam inventore corrupti perferendis?
-  Quidem explicabo aspernatur mollitia maxime enim odit optio? Ea magni quaerat praesentium. Reprehenderit ea reiciendis debitis delectus eos autem! Asperiores perspiciatis dolore odit obcaecati qui excepturi libero accusantium corrupti veniam.</p>
+<h1 style="text-align: center;">แบบสอบถาม</h1>
+้<hr>
+  <form>
+    <table align="center" style="background-color: burlywood; padding: 50px; border: 1px solid #000; width: 100%; max-width: 450px;">
+        <tr>
+            <td colspan="2" style=" font-weight: bold; font-size: 14px;">
+                ข้อมูลผู้ตอบแบบสอบถาม
+            </td>
+        </tr>
+        <tr>
+            <td><b>ชื่อ-นามสกุล:</b></td>
+            <td><input required type="text" name="fullname" style="width: 90%;"></td>
+        </tr>
+        <tr>
+            <td><b>รหัสนักศึกษา:</b></td>
+            <td><input required type="text" name="stdid" style="width: 90%;"></td>
+        </tr>
+        <tr>
+            <td><b>เพศ:</b></td>
+            <td>
+                <input type="radio" name="gender" value="male" checked> ชาย
+                <input type="radio" name="gender" value="female"> หญิง
+            </td>
+        </tr>
+        <tr>
+            <td><b>สังกัดคณะ:</b></td>
+            <td>
+                <select name="faculty" size="7" style="width: 70%;">
+                    <option value="science">วิทยาศาสตร์</option>
+                    <option value=" computer science">วิทยาการคอมพิวเตอร์</option>
+                    <option value="music">ดนตรี</option>
+                    <option value="arts">ศิลปศาสตร์</option>
+                    <option value="engineering">วิศวกรรมศาสตร์</option>
+                    <option value="medicine">แพทยศาสตร์</option>
+                    <option value="education">ศึกษาศาสตร์</option>
+                    <option value="business">บริหารธุรกิจ</option>
+                    <option value="law">นิติศาสตร์</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>แม่สีที่ชื่นชอบ:</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="favorite_colors" value="red"> แดง
+                <input type="checkbox" name="favorite_colors" value="blue"> น้ำเงิน
+                <input type="checkbox" name="favorite_colors" value="green"> เขียว
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>ผลไม้ที่ชื่นชอบ:</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="favorite_fruits" value="mango"> มะม่วง
+                <input type="checkbox" name="favorite_fruits" value="apple"> แอปเปิ้ล
+                <input type="checkbox" name="favorite_fruits" value="banana"> กล้วย
+                <input type="checkbox" name="favorite_fruits" value="durian"> ทุเรียน
+                <input type="checkbox" name="favorite_fruits" value="orange"> ส้ม
+               
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <b>อาหารที่ชื่นชอบ:</b>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="favorite_foods" value="fried rice"> ข้าวผัด
+                <input type="checkbox" name="favorite_foods" value="pizza"> พิซซ่า
+                <input type="checkbox" name="favorite_foods" value="carp"> ปู
+                <input type="checkbox" name="favorite_foods" value="sushi"> ซูชิ
+                <input type="checkbox" name="favorite_foods" value="noodles"> ก๋วยเตี๋ยว
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">ส่งแบบสอบถาม</button>
+            </td>
+        </tr>
+    </table>
+  </form>
+
+
 </body>
 </html>
